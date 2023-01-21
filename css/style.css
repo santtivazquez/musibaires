@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/*--------Header----------*/
+
+header{
+    background-color: rgb(8, 8, 8);
+    position: sticky;
+    top: 0;
+    bottom: ;
+    right: ;
+    left: ;
+    display: flex;
+    align-items: center;
+
+}
+
+header h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: white;
+    
+    
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+header nav ul li {
+    /*display: inline-block;*/
+    /*margin: 10px 15px;  (10px arriba y abajo, 15px lados)*/
+    /*margin: 10px 15px 15px 10px; arriba derecha abajo izquierda*/
+    /*margin margin-top: ;*/
+    /*margin-left: ;*/
+    margin: 10px 15px 15px 10px;
+
+
+}
+
+header nav  ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+/*-----Main--------*/
+
+.hero{
+    text-align: center;
+    width: 100%;
+    height: 75vh;
+    color: white;
+    background-image: url("../img/wallpaperbetter.com_1920x1080.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*--background-attachment: fixed;--*/
+}
+
+.hero p{
+    margin-bottom: 15px;
+}
+.hero h2{
+    font-size: 50px;
+    font-weight: 400;
+}
+.hero a{
+
+}
+
+.marcas{
+    background-color: rgba(228, 228, 228, 0.932);
+}
+
+.marcas h2{
+    text-align: center;
+    font-weight: 400;
+    }
+.marcas p{
+    text-align: center;
+}
+.marcas .contenedor-marcas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.marcas .contenedor-marcas div{
+    border: 1px solid rgb(206, 205, 205); 
+    width: 230px;
+    height: 250px;
+    margin: 30px;
+    text-align: center;
+    background-color: white;
+}
+.marcas div img{
+    width: 230px;
+}
+.marcas div a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: black;
+    padding: 3px 10px;
+}
+.audio{
+    background-color: rgba(228, 228, 228, 0.932);
+}
+.audio h2{
+    text-align: center;
+    font-weight: 400;
+}
+.audio p{
+    text-align: center;
+}
+
+.audio  .contenedor-audio{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.audio div img{
+    width: 230px;
+
+}
+
+.audio div a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: black;
+    padding: 3px 10px;
+    
+
+}
+
+.audio .contenedor-audio div{
+    border: 1px solid rgb(206, 205, 205); 
+    width: 230px;
+    height: 250px;
+    margin: 30px;
+    text-align: center;
+    background-color: white;
+
+}
+
+.audio .contenedor-audio div h3{
+    margin: 10px;
+}
+
+.fixed{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+
+}
+
+.fixed img{
+    height: 50px;
+    width: 50px;
+}
+
+
+
+/*------FOOTER-------*/
+footer h2{
+    font-weight: 400;
+}
+footer div img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*-----CONTACTO-----*/
+
+
+
+
