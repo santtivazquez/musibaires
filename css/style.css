@@ -24,10 +24,11 @@ header{
 
 }
 
-header h1{
+header h1 a{
     font-size: 50px;
     font-weight: 400;
     color: white;
+    text-decoration: none;
     
     
 }
@@ -52,6 +53,10 @@ header nav ul li {
 header nav  ul li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+
+header nav  ul li a:hover{
+    color: bisque;
 }
 
 
@@ -85,7 +90,9 @@ header nav  ul li a{
 }
 
 .marcas{
-    background-color: rgba(228, 228, 228, 0.932);
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 .marcas h2{
@@ -101,6 +108,8 @@ header nav  ul li a{
     flex-wrap: wrap;
 
 }
+
+
 .marcas .contenedor-marcas div{
     border: 1px solid rgb(206, 205, 205); 
     width: 230px;
@@ -108,7 +117,14 @@ header nav  ul li a{
     margin: 30px;
     text-align: center;
     background-color: white;
+    transition: 1s;
+    
 }
+
+.marcas .contenedor-marcas div:hover{
+    transform: scale(1.16);
+}
+
 .marcas div img{
     width: 230px;
 }
@@ -120,8 +136,12 @@ header nav  ul li a{
     background-color: black;
     padding: 3px 10px;
 }
+
+
 .audio{
-    background-color: rgba(228, 228, 228, 0.932);
+    background-color: rgba(0, 0, 0, 0.932);
+    text-decoration: none;
+    color: white;
 }
 .audio h2{
     text-align: center;
@@ -159,7 +179,12 @@ header nav  ul li a{
     margin: 30px;
     text-align: center;
     background-color: white;
+    transition: 1s;
 
+}
+
+.audio .contenedor-audio div:hover{
+    transform: scale(1.16);
 }
 
 .audio .contenedor-audio div h3{
@@ -176,8 +201,13 @@ header nav  ul li a{
 .fixed img{
     height: 50px;
     width: 50px;
+    transition: 0.5s;
 }
 
+.fixed img:hover{
+    height: 60px;
+    width: 60px;
+}
 
 
 /*------FOOTER-------*/
@@ -187,6 +217,15 @@ footer h2{
 footer div img{
     width: 50px;
     height: 50px;
+}
+
+footer{
+    background-color: rgb(63, 62, 62);
+}
+
+footer iframe{
+    width: 560px;
+    height: 315px;
 }
 
 
@@ -203,4 +242,87 @@ footer div img{
 
 
 
+
+
+
+
+/*----musica*------------*/
+
+main{
+    background-color: rgba(0, 0, 0, 0.932);
+}
+.galeria{
+    background-color: rgba(0, 0, 0, 0.932);
+}
+.audio-titulogaleria{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+.grid-galeria{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 300px;
+    gap: 7px;
+}
+.grid-galeria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 3s;
+
+}
+
+.grid-galeria div img:hover{
+    transform: scale(1.12);
+}
+
+.grid-item2{
+    grid-area: span 2;
+
+}
+
+
+
+
+
+/*-------MEDIA QUERY--------------*/
+@media screen and (max-width:850px){
+    header{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:600px) {
+    footer iframe{
+        width: 470px;
+        height: 225px;
+    }
+
+    
+}
+
+@media screen and (max-width:530px){
+    .grid-galeria{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;   
+
+}
+    footer div img{
+    width: 32px;
+    height: 32px;}
+
+@media screen and (max-width:470px){
+    header nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav ul li{
+        margin: 5px;
+    }
+    footer iframe{
+        width: 340px;
+        height: 145px;
+    }
+}  
 
