@@ -1,59 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
 
 
+
     <title>Desarrollo Web</title>
 </head>
+
 <body>
     <header>
-        <h1><a href="./index.html">Musibaires</a></h1>
-
-        <!--ENLACES RELATIVOS-->
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/musica.html">Audio</a></li>
-                <li><a href="./pages/marcas.html">Marcas</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <!--ENLACES ABSOLUTOS>
-        <a href="https://www.coderhouse.com/" target="_blank">CoderHouse</a-->
-        <!--ENLACES INTERNOS>
-        <a href="#pie">Contacto footer</a-->
-        <nav>
-            <!--Lista ORDENADA-->
-            <!--ol>
-                <li>Papas</li>
-                <li>Cebolla</li>
-                <li>Arroz</li>
-                <li>Cereal</li>
-            </ol-->
-
-            <!--LISTA DESORDENADA>
-            <ul>
-                <li>Papas</li>
-                <li>Cebolla</li>
-                <li>Arroz</li>
-                <li>Cereal</li>
-            </ul-->
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Musibaires</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/musica.html">Audio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/marcas.html">Marcas</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Conocenos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./pages/nosotros.html">Nosotros</a></li>
+                                <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn boton" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <h2>Instrumentos</h2>
-            <p>Encontra tu pasión.</p>
+        <section class="carusel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/slid1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slide2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slide3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
         <section class="marcas">
             <h2>Marcas</h2>
-            <p>Las mejores marcas del mundo, directas a tu hogar.</p>   
+            <p>Las mejores marcas del mundo, directas a tu hogar.</p>
             <div class="contenedor-marcas">
                 <div>
                     <img src="./img/fender_v2.jpg" alt="">
@@ -68,30 +99,30 @@
                     <a href="./pages/marcas.html">Ver más</a>
                 </div>
             </div>
-            
+
         </section>
         <section class="audio">
             <h2>Audio</h2>
             <p>Todo lo que necesitas para ser un profesional.</p>
             <div class="contenedor-audio">
                 <div>
-                    
+
                     <img src="./img/rockcamp-mesa-mezclas-soundcraft.png" alt="">
                     <h3>Mesas de mezcla</h3>
-                    <a href="./pages/musica.html">Ver más</a>                    
+                    <a href="./pages/musica.html">Ver más</a>
                 </div>
-                <div>                                    
+                <div>
                     <img src="./img/mejores-monitores-de-estudio.jpg" alt="">
                     <h3>Monitores</h3>
                     <a href="./pages/musica.html">Ver más</a>
                 </div>
-                <div>                
+                <div>
                     <img src="./img/micrófono-de-estudio-con-soporte-1024x676.jpg" alt="">
                     <h3>Microfonos</h3>
-                    <a href="./pages/musica.html">Ver más</a>  
+                    <a href="./pages/musica.html">Ver más</a>
                 </div>
             </div>
-            
+
         </section>
         <section>
             <!--iframe width="560" height="315" src="https://www.youtube.com/embed/2NnqLZxEqkE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
@@ -101,7 +132,7 @@
         </section>
         </section>
     </main>
-    <div class="fixed"> 
+    <div class="fixed">
         <!--img src="./img/whatsapp.png"alt=""-->
         <a href="https://web.whatsapp.com/" target="_blank"><img src="./img/whatsapp.png" alt="whatsapp"></a>
     </div>
@@ -113,11 +144,13 @@
             <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="Insta"></a>
             <a href="https://twitter.com/?lang=es" target="_blank"><img src="./img/twt.png" alt="Twit"></a>
         </div>
-        <iframe src="https://www.youtube.com/embed/2NnqLZxEqkE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div>
-            <h2>Informacion</h2>
-            <a href="https://web.whatsapp.com/" target="_blank"><img src="./img/whatsapp.png" alt="Wpp"></a>
-        </div>
+        <iframe src="https://www.youtube.com/embed/2NnqLZxEqkE" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
