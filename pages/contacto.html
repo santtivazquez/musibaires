@@ -49,43 +49,35 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="formularios">
             <form action=""  method=""  enctype="">
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre"   id="nombre">
-                </div>
-                <div>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido"   id="apellido">
-                </div>
-                <div>
-                    <label for="contrasena">Contraseña</label>
-                    <input type="password" name="contrasena"  id="contrasena">
-                </div>
-                <div>
-                    <h2>Genero:</h2>
+                <div class="contenedor-formularios">
                     <div>
-                        <label for="">Maculino</label>
-                        <input type="radio" name="genero">
-                        <label for="">Femenino</label>
-                        <input type="radio" name="genero">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre"   id="nombre">
                     </div>
-                </div>
-                <div>
-                    <h2>Selecciona tu Pais</h2>
-                    <select name="" id="">
-                        <option value="Argentina">Argentina</option>
-                        <option value="Uruguay">Uruguay</option>
-                    </select>
-                </div>
-                <div>
-                    <h2>Dejanos tu mensaje</h2>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar formulario">
-                    <input type="reset" value="Limpiar formulario">
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido"   id="apellido">
+                    </div>
+                    <div>
+                        <h2 class="seleccion-consulta">Selecciona tu consulta</h2>
+                        <select name="" id="" class="seleccion-cartel">
+                            <option value="Argentina">Precios</option>
+                            <option value="Uruguay">Garantia</option>
+                            <option value="Uruguay">Devolucion</option>
+                            <option value="Uruguay">Stock</option>
+                            <option value="Uruguay">Otras</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h2 class="seleccion-consulta">Dejanos tu mensaje</h2>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar formulario">
+                        <input type="reset" value="Limpiar formulario">
+                    </div>
                 </div>
             </form>
         </section>
