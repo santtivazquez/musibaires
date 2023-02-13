@@ -5,3 +5,117 @@
 
 body {
   font-family: 'Oswald', sans-serif; }
+
+header nav {
+  background-color: black; }
+  header nav div div ul li {
+    margin: 10px 15px 15px 10px; }
+  header nav div .navbar-brand {
+    font-size: 50px;
+    color: white; }
+
+main section div div img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover; }
+
+main section {
+  background-color: black;
+  text-decoration: none;
+  color: white; }
+  main section h2 {
+    text-align: center;
+    font-weight: 400; }
+  main section p {
+    text-align: center; }
+
+main {
+  background-color: rgba(0, 0, 0, 0.932); }
+  main .galeria {
+    background-color: rgba(0, 0, 0, 0.932); }
+    main .galeria .audio-titulogaleria {
+      text-align: center;
+      color: white;
+      margin-bottom: 20px; }
+    main .galeria .grid-galeria {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 300px;
+      gap: 7px; }
+      main .galeria .grid-galeria div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 3s; }
+        main .galeria .grid-galeria div img:hover {
+          transform: scale(1.12); }
+    main .galeria .grid-item2 {
+      grid-area: span 2; }
+
+main .galeria-marcas {
+  background-color: rgba(0, 0, 0, 0.932); }
+  main .galeria-marcas h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px; }
+  main .galeria-marcas .grid-galeriamarcas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
+    gap: 7px; }
+    main .galeria-marcas .grid-galeriamarcas div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 3s; }
+      main .galeria-marcas .grid-galeriamarcas div img:hover {
+        transform: scale(1.12); }
+
+.formularios .contenedor-formularios div label {
+  color: white;
+  text-align: center;
+  margin: 15px; }
+
+.formularios .contenedor-formularios div .nombreformu {
+  text-align: center; }
+
+.formularios .contenedor-formularios div .cartel {
+  text-align: center;
+  margin: 15px; }
+
+.formularios .contenedor-formularios div .cuadrotexto {
+  text-align: center;
+  margin: 15px; }
+
+.formularios .contenedor-formularios div .enviarlimpiar {
+  text-align: center; }
+
+footer {
+  background-color: #3f3e3e;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer div {
+    width: 25%; }
+    footer div h2 {
+      font-weight: 200;
+      color: white; }
+    footer div img {
+      width: 50px;
+      height: 50px; }
+  footer iframe {
+    width: 560px;
+    height: 315px;
+    margin: 50px; }
+
+.fixed {
+  position: fixed;
+  right: 50px;
+  bottom: 50px; }
+  .fixed img {
+    height: 50px;
+    width: 50px;
+    transition: 0.5s; }
+    .fixed img:hover {
+      height: 60px;
+      width: 60px; }
