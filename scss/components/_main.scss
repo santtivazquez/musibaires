@@ -3,18 +3,18 @@
 
 
 main{
-    section{
-        div{
-            div{
-                img{
+    .carusel{
+        .carousel{
+            .carousel-inner{
+                .imgcarousel{
                     width: 100%;
-                    height: 700px;
+                    height: 750px;
                     object-fit: cover;
                 }
             }
         }
     }
-    section{
+    .marcas{
         background-color: rgb(0, 0, 0);
         text-decoration: none;
         color: rgb(255, 255, 255);
@@ -24,6 +24,35 @@ main{
         }
         p{
             text-align: center;
+        }
+        .contenedor-marcas{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+            .contenedor-marcas-div{
+                border: 1px solid rgb(206, 205, 205); 
+                width: 230px;
+                height: 250px;
+                margin: 30px;
+                text-align: center;
+                background-color: white;
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.16);
+                }
+                img{
+                    width: 230px;
+                }
+                .boton-tarjetas{
+                    text-decoration: none;
+                color: rgb(255, 255, 255);
+                font-size: 15px;
+                font-weight: bold;
+                background-color: black;
+                padding: 3px 10px;
+                }
+            }
         }
     }
 }
@@ -119,6 +148,7 @@ main{
             .nombreformu{
                 text-align: center;
             }
+
             .cartel{
                 text-align: center;
                 margin: 15px;
@@ -131,5 +161,29 @@ main{
                 text-align: center;
             }
         }
+        .seleccion-consulta{
+                color: white;
+                margin: 15px;
+                text-align: center;
+        }
     }
 }
+
+
+//*--------NOSOTROS------------*//
+
+.nosotros{
+        text-align: center;
+        color: white;
+    }
+.contacto-nosotros{
+        color: white;
+        transition: 0,5s;
+        border: 10px;
+        border-color: white;
+        &:hover{
+            color: bisque;
+        }
+    }
+
+
