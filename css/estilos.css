@@ -6,6 +6,11 @@
 body {
   font-family: 'Oswald', sans-serif; }
 
+main .marcas .contenedor-marcas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
 header nav {
   background-color: black; }
   header nav div div ul li {
@@ -13,6 +18,13 @@ header nav {
   header nav div .navbar-brand {
     font-size: 50px;
     color: white; }
+  header nav .container-fluid .d-flex .boton {
+    border: 1px solid white;
+    color: white;
+    transition: 0,5s; }
+    header nav .container-fluid .d-flex .boton:hover {
+      color: bisque;
+      border: 1px solid bisque; }
 
 main .carusel .carousel .carousel-inner .imgcarousel {
   width: 100%;
@@ -25,37 +37,33 @@ main .marcas {
   color: white; }
   main .marcas h2 {
     text-align: center;
-    font-weight: 400; }
+    font-weight: 400px; }
   main .marcas p {
     text-align: center; }
-  main .marcas .contenedor-marcas {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; }
-    main .marcas .contenedor-marcas .contenedor-marcas-div {
-      border: 1px solid #cecdcd;
-      width: 230px;
-      height: 250px;
-      margin: 30px;
-      text-align: center;
-      background-color: white;
-      transition: 1s; }
-      main .marcas .contenedor-marcas .contenedor-marcas-div:hover {
-        transform: scale(1.16); }
-      main .marcas .contenedor-marcas .contenedor-marcas-div img {
-        width: 230px; }
-      main .marcas .contenedor-marcas .contenedor-marcas-div .boton-tarjetas {
-        text-decoration: none;
-        color: white;
-        font-size: 15px;
-        font-weight: bold;
-        background-color: black;
-        padding: 3px 10px; }
+  main .marcas .contenedor-marcas .contenedor-marcas-div {
+    border: 1px solid #cecdcd;
+    width: 230px;
+    height: 250px;
+    margin: 30px;
+    text-align: center;
+    background-color: white;
+    transition: 1s; }
+    main .marcas .contenedor-marcas .contenedor-marcas-div:hover {
+      transform: scale(1.16); }
+    main .marcas .contenedor-marcas .contenedor-marcas-div img {
+      width: 230px; }
+    main .marcas .contenedor-marcas .contenedor-marcas-div .boton-tarjetas {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      background-color: black;
+      padding: 3px 10px; }
 
 main {
-  background-color: rgba(0, 0, 0, 0.932); }
+  background-color: black; }
   main .galeria {
-    background-color: rgba(0, 0, 0, 0.932); }
+    background-color: black; }
     main .galeria .audio-titulogaleria {
       text-align: center;
       color: white;
@@ -76,7 +84,7 @@ main {
       grid-area: span 2; }
 
 main .galeria-marcas {
-  background-color: rgba(0, 0, 0, 0.932); }
+  background-color: black; }
   main .galeria-marcas h2 {
     text-align: center;
     color: white;
@@ -138,7 +146,7 @@ footer {
   footer div {
     width: 25%; }
     footer div h2 {
-      font-weight: 200;
+      font-weight: 200px;
       color: white; }
     footer div img {
       width: 50px;

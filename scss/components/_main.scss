@@ -15,20 +15,18 @@ main{
         }
     }
     .marcas{
-        background-color: rgb(0, 0, 0);
+        background-color: $color-primario;
         text-decoration: none;
-        color: rgb(255, 255, 255);
+        color: $color-secundario;
         h2{
             text-align: center;
-            font-weight: 400;
+            font-weight: nth($font-weight, 2);
         }
         p{
             text-align: center;
         }
         .contenedor-marcas{
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            @extend %flex;
             
             .contenedor-marcas-div{
                 border: 1px solid rgb(206, 205, 205); 
@@ -36,7 +34,7 @@ main{
                 height: 250px;
                 margin: 30px;
                 text-align: center;
-                background-color: white;
+                background-color: $color-secundario;
                 transition: 1s;
                 &:hover{
                     transform: scale(1.16);
@@ -46,11 +44,11 @@ main{
                 }
                 .boton-tarjetas{
                     text-decoration: none;
-                color: rgb(255, 255, 255);
-                font-size: 15px;
-                font-weight: bold;
-                background-color: black;
-                padding: 3px 10px;
+                    color: $color-secundario;
+                    font-size: 15px;
+                    font-weight: bold;
+                    background-color: $color-primario;
+                    padding: 3px 10px;
                 }
             }
         }
@@ -65,15 +63,15 @@ main{
 //*--------MUSICA------------*//
 
 main{
-    background-color: rgba(0, 0, 0, 0.932);
+    background-color: $color-primario;
     
     .galeria{
-        background-color: rgba(0, 0, 0, 0.932);
+        background-color: $color-primario;
 
 
         .audio-titulogaleria{
             text-align: center;
-            color: white;
+            color: $color-secundario;
             margin-bottom: 20px;
         }
 
@@ -107,10 +105,10 @@ main{
 
 main{
     .galeria-marcas{
-        background-color: rgba(0, 0, 0, 0.932);
+        background-color: $color-primario;
         h2{
             text-align: center;
-            color: white;
+            color:$color-secundario;
             margin-bottom: 20px;
         }
         .grid-galeriamarcas{
@@ -141,9 +139,9 @@ main{
     .contenedor-formularios{
         div{
             label{
-                color: white;
+                color: $color-secundario;
                 text-align: center;
-                margin: 15px;
+                margin: nth($margin, 2);
             }
             .nombreformu{
                 text-align: center;
@@ -151,19 +149,19 @@ main{
 
             .cartel{
                 text-align: center;
-                margin: 15px;
+                margin: nth($margin, 2);
             }
             .cuadrotexto{
                 text-align: center;
-                margin: 15px;
+                margin: nth($margin, 2);
             }
             .enviarlimpiar{
                 text-align: center;
             }
         }
         .seleccion-consulta{
-                color: white;
-                margin: 15px;
+                color: $color-secundario;
+                margin: nth($margin, 2);
                 text-align: center;
         }
     }
@@ -174,15 +172,15 @@ main{
 
 .nosotros{
         text-align: center;
-        color: white;
+        color: $color-secundario;
     }
 .contacto-nosotros{
         color: white;
         transition: 0,5s;
         border: 10px;
-        border-color: white;
+        border-color: $color-secundario;
         &:hover{
-            color: bisque;
+            color: $color-terciario;
         }
     }
 

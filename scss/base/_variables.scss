@@ -1,0 +1,41 @@
+$color-primario: black;
+$color-secundario: white;
+$color-terciario: bisque;
+
+
+$font-weight:
+200px,
+400px;
+
+
+$margin:
+10px,
+15px,
+50px;
+
+
+
+
+
+
+$boton:(
+
+border-boton: 1px solid white,
+color-texto: white,
+);
+
+
+%flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+

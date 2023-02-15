@@ -2,7 +2,7 @@
 header{
     
     nav{
-        background-color: black;
+        background-color: $color-primario;
         div{
             a{
             }
@@ -15,7 +15,20 @@ header{
             }
             .navbar-brand{
                 font-size: 50px;
-                color: white;
+                color: $color-secundario;
+            }
+        }
+        .container-fluid{
+            .d-flex{
+                .boton{
+                    border: map-get($boton, border-boton);
+                    color: $color-secundario;
+                    transition: 0,5s;
+                    &:hover{
+                        color: $color-terciario;
+                        border: 1px solid $color-terciario;
+                    }
+                }
             }
         }
 

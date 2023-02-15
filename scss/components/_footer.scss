@@ -1,13 +1,11 @@
 footer{
     background-color: rgb(63, 62, 62);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (flex, center, center)
     div{
         width: 25%;
         h2{
-            font-weight: 200;
-            color: white;
+            font-weight: nth($font-weight, 1);
+            color: $color-secundario;
         }
         img{
             width: 50px;
@@ -17,7 +15,7 @@ footer{
     iframe{
         width: 560px;
         height: 315px;
-        margin: 50px;
+        margin: nth($margin, 3);
     }
 }
 
